@@ -10,4 +10,4 @@ namespace API.Errors
 
         public string Details { get; set; }
     }
-}   
+}
