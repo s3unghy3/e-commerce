@@ -1,3 +1,12 @@
+// nav.my-2 {
+//     //border:1px solid black;
+//     padding-top:100px;
+//     position:relative;
+//     left:7%;
+    
+// }
+
+
 .cart-no {
     position: absolute;
     min-height: 25px;
@@ -17,6 +26,7 @@ a {
 
     &.active {
         color: orange
+
     }
 }
 
@@ -26,4 +36,10 @@ a {
     &:focus {
         outline: none;
     }
+
+     width: 14%;
+     height: 14%;
+
+    //  position:relative;
+    //  left:48%;
 }
