@@ -29,16 +29,21 @@
         z-index: 1000;
         transition: all 0.5s;
     }
-    & button:first-of-type {
-        transform: translateX(-20px);
-    }
-    & button:last-of-type {
-        transform: translateX(20px);
-    }
+    // & button:first-of-type {
+    //     transform: translateX(-20px);
+    // }
+    // & button:last-of-type {
+    //     transform: translateX(20px);
+    // }
 }
 
 a {
     text-decoration: none;
     color: orange;
 
+}
+
+.card{
+
+    border:none;
 }

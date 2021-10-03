@@ -16,7 +16,7 @@
                         <div class="py-2 text-uppercase">Total</div>
                     </th>
                     <th *ngIf="isBasket" scope="col" class="border-0">
-                        <div class="py-2 text-uppercase">Remove</div>
+                        <div class="py-2 text-uppercase" style="text-align: center;">Remove</div>
                     </th>
                 </tr>
             </thead>
@@ -29,12 +29,12 @@
                             <div class="ml-3 d-inline-block align-middle">
                                 <h5 class="mb-0">
                                     <a routerLink="/shop/{{item.id || item.productId}}"
-                                        class="text-dark">{{item.productName}}</a>
+                                        class="text-dark" style="text-decoration: none;">{{item.productName}}</a>
                                 </h5>
-                                <span
+                                <!-- <span
                                     *ngIf="item.type"
                                     class="text-muted font-weight-normal font-italic d-block">Type:
-                                    {{item.type}}</span>
+                                    {{item.type}}</span> -->
                             </div>
     
                         </div>
@@ -55,7 +55,7 @@
                         <strong>{{item.price * item.quantity | currency}}</strong></td>
                     <td class="align-middle text-center">
                         <a class="text-danger">
-                            <i *ngIf="isBasket" (click)="removeBasketItem(item)" class="fa fa-trash" style="font-size: 2em; cursor: pointer;"></i>
+                            <i *ngIf="isBasket" (click)="removeBasketItem(item)" class="fa fa-trash-o" style="font-size: 2em; cursor: pointer; color:black"></i>
                         </a>
                     </td>
                 </tr>

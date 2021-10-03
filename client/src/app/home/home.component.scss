@@ -3,7 +3,11 @@
 }
 
 img {
-    object-fit: cover;
-    height: 600px;
+    object-fit: scale-down;
     width: 100%;
+}
+
+slide{
+
+   top:50px;
 }
