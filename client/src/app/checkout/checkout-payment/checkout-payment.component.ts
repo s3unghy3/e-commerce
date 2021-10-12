@@ -25,7 +25,7 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
   cardCvc: any;
   cardErrors: any;
   cardHandler = this.onChange.bind(this);
-  loading = false;
+  //loading = false;
   cardNumberValid = false;
   cardExpiryValid = false;
   cardCvcValid = false;
@@ -78,7 +78,7 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
   }
 
   async submitOrder() {
-    this.loading = true;
+    //this.loading = true;
     const basket = this.basketService.getCurrentBasketValue();
     try {
       const createdOrder = await this.createOrder(basket);
@@ -90,10 +90,10 @@ export class CheckoutPaymentComponent implements AfterViewInit, OnDestroy {
       } else {
         this.toastr.error(paymentResult.error.message);
       }
-      this.loading = false;
+      //this.loading = false;
     } catch (error) {
       console.log(error);
-      this.loading = false;
+      //this.loading = false;
     }
   }
 

@@ -1,6 +1,28 @@
- .list-group-item{
+.container{
+
+    padding-top:100px;
+}
+ 
+
+ul{
+    list-style-type: none;
+    padding:0;
+}
+
+li{
      cursor: pointer;
+     margin-bottom:5px;
+
  }
+
+ li:hover{
+    text-decoration: underline;
+    color:orange;
+}
+
+li.active {
+    color:orange
+}
 
 .d-flex {
 
@@ -9,10 +31,15 @@
 
 h5{
    color: black;
-   font-weight: bold;
+   font-weight: 500;
+   padding-top:30px;
 }
 
 .form-control{
     width:210px;
+}
+
+.custom-select{
+width:170px;
 }
 

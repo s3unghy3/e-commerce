@@ -1,5 +1,5 @@
-<div class="d-flex justify-content-center mt-5">
-    <div class="col-3">
+<div style="display:flex; position:relative; left:22.5%; margin-top:150px;">
+    <div class="col-3" style="display: inline-block; padding-right:50px; border-right: 0.5px solid #999999;">
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="text-center mb-4">
                 <h1 class="h3 mb-3 font-weight-normal">Login</h1>
@@ -11,4 +11,24 @@
             <button [disabled]="loginForm.invalid" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         </form>
     </div>
+
+
+    <div style="margin-left:50px; display: inline-block;">
+        <h1 class="h3 mb-3 font-weight-normal" style="padding-bottom:15px;">Do not have an HazaPlus account yet?<br></h1>
+        <ul style="list-style-type: none; padding:0;" >
+        <li style="margin-bottom:8px">
+            <i class="fa fa-check"> Track your order from order placement to delivery</i>
+        </li>
+        <li style="margin-bottom:8px">
+            <i class="fa fa-check"> Review your order history</i>       
+        </li>
+        <li style="margin-bottom:25px">
+            <i class="fa fa-check"> Remember your details for your future orders</i>
+        </li> 
+    </ul>
+    <ng-container *ngIf="(currentUser$ | async) === null">
+   <a class="btn btn-primary" href="#" role="button" routerLink="/account/register">Create an account</a>
+      </ng-container>
+    </div>
+
 </div>

@@ -1,9 +1,13 @@
 <div class="container mt-2">
     <div *ngIf="(basket$ | async) === null">
-        <p>There are no items in your basket</p>
+        <h3>Your basket is currently empty</h3>
+        <h6>Make it feel needed by adding some nice things</h6>
     </div>
 
     <div *ngIf="basket$ | async">
+        <div class="viewBasket">
+            <h1>Basket</h1>
+        </div>
         <div class="pb-5">
             <div class="container">
                 <div class="row">

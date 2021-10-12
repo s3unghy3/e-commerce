@@ -6,6 +6,9 @@
     
 // }
 
+header{
+    height:100px;
+}
 
 .cart-no {
     position: absolute;
@@ -37,9 +40,24 @@ a {
         outline: none;
     }
 
-     width: 14%;
-     height: 14%;
+     width: 175.6px;
+     height: 42px;
 
-    //  position:relative;
-    //  left:48%;
+    position:relative;
+    margin-left: 38%;
+    margin-top: 50px;
 }
+
+.p-2{
+    position:relative;
+    left:50%;
+    top:40px;
+    font-size:15px
+
+}
+
+#login-button{
+    left:0px;
+}
+
+

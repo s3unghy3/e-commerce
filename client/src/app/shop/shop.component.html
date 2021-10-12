@@ -10,16 +10,20 @@
                 </select>
 
                 <h5 class="mt-3 mb-4">Brands</h5>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item" *ngFor="let brand of brands"
+                <!-- <ul class="list-group mb-3"> -->
+                    <ul>
+                    <!-- <li class="list-group-item" *ngFor="let brand of brands" -->
+                        <li *ngFor="let brand of brands"
                         [class.active]="brand.id === shopParams.brandId" [value]="brand.id"
                         (click)="onBrandSelected(brand.id)">
                         {{brand.name}}
                     </li>
                 </ul>
                 <h5 class="mt-3 mb-4">Types</h5>
-                <ul class="list-group my-3">
-                    <li class="list-group-item" *ngFor="let type of types"
+                <!-- <ul class="list-group my-3"> -->
+                    <ul>
+                    <!-- <li class="list-group-item" *ngFor="let type of types" -->
+                        <li *ngFor="let type of types"
                         [class.active]="type.id === shopParams.typeId" [value]="type.id"
                         (click)="onTypeSelected(type.id)">
                         {{type.name}}
