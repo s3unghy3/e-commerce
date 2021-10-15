@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IBasket, IBasketItem, IBasketTotals } from '../shared/models/basket';
 import { BasketService } from './basket.service';
+// import { CdkStepper } from '@angular/cdk/stepper';
+
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-basket',
@@ -9,10 +13,11 @@ import { BasketService } from './basket.service';
   styleUrls: ['./basket.component.scss']
 })
 export class BasketComponent implements OnInit {
+  // appStepper: CdkStepper;
   basket$: Observable<IBasket>;
   basketTotals$: Observable<IBasketTotals>;
 
-  constructor(private basketService: BasketService) { }
+  constructor(private basketService: BasketService,  private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.basket$ = this.basketService.basket$;
@@ -29,6 +34,13 @@ export class BasketComponent implements OnInit {
 
   decrementItemQuantity(item: IBasketItem) {
     this.basketService.decrementItemQuantity(item);
+  }
+
+    createPaymentIntent() {
+    return this.basketService.createPaymentIntent().subscribe((response: any) => {
+    }, error => {
+      console.log(error);
+    })
   }
 
 }

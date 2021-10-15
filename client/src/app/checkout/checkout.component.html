@@ -1,4 +1,129 @@
-<div class="container mt-5">
+<div class="container" style="margin-top:100px"> 
+<div class="row">
+
+
+
+
+<div class="col-6" style=" margin-right:20px; padding:15px">
+    <h6 style="background-color: #0099cc; color:white; padding:5px">1. REVIEW YOUR ORDER</h6>
+    <div class="mt-4">
+        <app-basket-summary
+            [isBasket]=false
+            [items]="(basket$ | async).items"
+            ></app-basket-summary>
+    </div>
+
+<div class="mt-3" [formGroup]="checkoutForm">
+    <h6 class="mb-3" style="background-color: #0099cc; color:white; padding:5px">2. SHIPPING DETAILS</h6>
+    <div class="row mt-3" formGroupName="deliveryForm" style="margin-left:20px">
+        <div class="col-6 form-group" *ngFor="let method of deliveryMethods">
+            <input type="radio"
+                id={{method.id}}
+                (click)="setShippingPrice(method)"
+                value={{method.id}}
+                formControlName="deliveryMethod"
+                class="custom-control-input"
+            >
+            <label for="{{method.id}}" class="custom-control-label">
+                <strong>{{method.shortName}} - {{method.price | currency:"EUR"}}</strong>
+                <br />
+                <span class="label-description">{{method.description}}</span>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4" [formGroup]="checkoutForm">
+
+        <h6 style="background-color: #0099cc; color:white; padding:5px">3. DELIVERY</h6>
+        <div style="right:0px; position:absolute; padding-right:15px; padding-top:10px">
+        <button 
+            (click)="saveUserAddress()" 
+            class="btn btn-outline-success mb-3"
+            [disabled]="!checkoutForm.get('addressForm').valid || !checkoutForm.get('addressForm').dirty"
+        >
+            Save as default address
+        </button>
+    </div>
+
+    <div class="row" formGroupName="addressForm" style="margin-top:70px">
+        <div class="form-group col-6">
+            <app-text-input [label]="'First name'" formControlName="firstName"></app-text-input>
+        </div>
+        <div class="form-group col-6">
+            <app-text-input [label]="'Last name'" formControlName="lastName"></app-text-input>
+        </div>
+        <div class="form-group col-6">
+            <app-text-input [label]="'Street'" formControlName="street"></app-text-input>
+        </div>
+        <div class="form-group col-6">
+            <app-text-input [label]="'City'" formControlName="city"></app-text-input>
+        </div>
+        <div class="form-group col-6">
+            <app-text-input [label]="'State'" formControlName="state"></app-text-input>
+        </div>
+        <div class="form-group col-6">
+            <app-text-input [label]="'Zip code'" formControlName="zipCode"></app-text-input>
+        </div>
+    </div>
+</div>
+    <!-- <button class="btn btn-primary" (click)="createPaymentIntent()">
+        Go to Payment <i class="fa fa-angle-right"></i>
+    </button> -->
+</div>
+<div class="col" style="padding:15px" >
+    <h6 style="background-color: #0099cc; color:white; padding:5px">4.PAYMENT</h6>
+    <div class="mt-4" [formGroup]="checkoutForm" style="margin-bottom:10px">
+        <div class="row">
+            <div class="form-group col-12" formGroupName="paymentForm">
+                <app-text-input [label]="'Name on card'" formControlName="nameOnCard"></app-text-input>
+            </div>
+    
+            <div class="form-group row-6">
+                <div #cardNumber class="form-control py-3"></div>
+                <ng-container *ngIf="cardErrors">
+                    <span class="text-danger">{{cardErrors}}</span>
+                </ng-container>
+            </div>
+    
+            <div class="form-group col-6">
+                <div #cardExpiry class="form-control py-3"></div>
+            </div>
+    
+            <div class="form-group col-6">
+                <div #cardCvc class="form-control py-3"></div>
+            </div>
+    
+            </div>
+        </div>
+        <button  [disabled]="checkoutForm.get('paymentForm').invalid
+        ||checkoutForm.get('deliveryForm').invalid
+        || !cardNumberValid
+        || !cardExpiryValid 
+        || !cardCvcValid"  class="btn btn-primary" (click)="submitOrder()">
+            PLACE ORDER <i class="fa fa-angle-right"></i>
+            <!-- <i *ngIf="loading" class="fa fa-spinner fa-spin"></i> -->
+        </button>
+        <div class="row-5" style="margin-top:40px">
+            <app-order-totals
+                *ngIf="(basketTotals$ | async)"
+                [shippingPrice]="(basketTotals$ | async).shipping"
+                [subtotal]="(basketTotals$ | async).subtotal"
+                [total]="(basketTotals$ | async).total"
+            ></app-order-totals>
+        </div>
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+<!-- <div class="container mt-5">
     <div class="row">
         <div class="col-8">
             <app-stepper [linearModeSelected]="true" #appStepper>
@@ -25,4 +150,4 @@
             ></app-order-totals>
         </div>
     </div>
-</div>
+</div> -->

@@ -1,11 +1,11 @@
 <div class="container mt-2" style="margin-bottom:375px">
     <div *ngIf="(basket$ | async) === null">
-        <h3>Your basket is currently empty</h3>
-        <h6>Make it feel needed by adding some nice things</h6>
+        <h3 style="margin-top:150px; font-weight:700;">Your basket is currently empty</h3>
+        <h6 style="margin-top:25px; font-size:14px">Make it feel needed by adding some nice things</h6>
     </div>
 
     <div *ngIf="basket$ | async">
-        <div class="viewBasket">
+        <div style="    width:100%; text-align: center; padding: 50px 0 30px 0;">
             <h1>Basket</h1>
         </div>
         <div class="pb-5">
@@ -29,9 +29,9 @@
                             [subtotal]="(basketTotals$ | async).subtotal"
                             [total]="(basketTotals$ | async).total"
                         ></app-order-totals>
-                        <a routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block">
-                            Proceed to checkout
-                        </a>
+                        <button routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block"  (click)="createPaymentIntent()">
+                            Checkout
+                        </button>
                     </div>
                 </div>
             </div>
