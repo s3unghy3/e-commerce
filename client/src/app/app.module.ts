@@ -34,3 +34,6 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+//loading and bootstrapping our app

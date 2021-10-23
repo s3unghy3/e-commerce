@@ -18,6 +18,6 @@
     </div>
 
     <div class="invalid-feedback d-block" *ngIf="(!controlDir?.control?.valid && controlDir?.control?.dirty)" >
-        <span *ngIf="controlDir.control.errors?.emailExists">Email address is in use</span>
+        <span *ngIf="controlDir.control.errors?.emailExists">This email address is already in use</span>
     </div>
 </div>

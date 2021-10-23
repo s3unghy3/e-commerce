@@ -1,7 +1,8 @@
 [
   {
     "Name": "Alecto Armchair",
-    "Description": "will be added later",
+    "Description":
+    "Bring more of that mid-century sophistication and simplicity into your home with this modern armchair. That simplicity lies in the use of minimal, but high-quality materials like orange velour fabric on the enveloping seating area and the black finished metal on its exposed legs and supporting framework. And little pop is given by gold-finished ferrules at the tip of each leg. This timeless design is both very comfortable and practical and will be stylish for years to come. Each accent chair comes fully assembled.",
     "Price": 200,
     "PictureUrl": "images/products/allmodern_Alecto_chair.png",
     "ProductTypeId": 4,
@@ -9,31 +10,32 @@
   },
   {
     "Name": "Boardway Dining Table",
-    "Description": "will be added later",
-    "Price": 150,
+    "Description":
+    "Enjoy a home-cooked meal (or let's be honest, takeout) at this dining table. It's circular size will fit four comfortably and makes it a perfect fit in small spaces or eat-in kitchens. Crafted of solid Malaysian oak wood, this dining table features a round tabletop with a smooth, reverse-beveled edge. The table’s natural stain highlights the wood’s grain, creating a subtle sunburst effect. Rounding out the design, the open pedestal base includes four angular legs. Some assembly is required.",
+    "Price": 480,
     "PictureUrl": "images/products/allmodern_boardway_table.png",
     "ProductTypeId": 3,
     "ProductBrandId": 1
   },
   {
     "Name": "Lark Sofa",
-    "Description": "will be added later",
-    "Price": 180,
+    "Description": "A stylish sofa is an easy way to elevate the entire look of your room – and this sofa is the perfect candidate for the job. Upholstered in plush velvet and supported by a sturdy wood frame, it features a button-tufted seat for a touch of tailored detail. Both the seat and back cushions are filled with foam for a more comfortable lounging experience, and are secured to the frame so you never have to worry about them shifting out of place. Slim, tapered legs made from pecan wood give just the right amount of warmth to the look, and both bolster pillows are included.",
+    "Price": 860,
     "PictureUrl": "images/products/allmodern_Lark_sofa.png",
     "ProductTypeId": 1,
     "ProductBrandId": 1
   },
   {
     "Name": "Radcliff Upholstered Bed",
-    "Description": "will be added later",
-    "Price": 300,
+    "Description": "Give your bedroom Insta-worthy style – without breaking the bank. The foam-filled headboard is wrapped in polyester fabric and features neat button tufting, while the solid-wood base has a warm walnut finish that reveals variations in the wood grain that make each piece unique. Tapered, splayed legs bring in all those mid-century vibes, and the center legs and slatted design system support you and your mattress – so you can forget about a box spring. Clearance under the bed is 8",
+    "Price": 500,
     "PictureUrl": "images/products/allmodern_radcliff_bed.png",
     "ProductTypeId": 2,
     "ProductBrandId": 1
   },
   {
     "Name": "Octagon Corner Sofa",
-    "Description": "will be added later",
+    "Description": "Like all Paul McCobb designs, this quarter octagon corner sofa is quintessentially midcentury with its clean lines, simple silhouette and attention to detail and craftsmanship. Sectional features luxe cotton-blend upholstery in a toasty chestnut, black satin metal legs and an FSC ®-certified frame. The design's large scale makes quite the statement when arranged as a full sectional, but the individual pieces are versatile enough to work well on their own. CB2 exclusive.",
     "Price": 250,
     "PictureUrl": "images/products/dwell_CB2X_sofa.png",
     "ProductTypeId": 1,
@@ -41,7 +43,7 @@
   },
   {
     "Name": "HAY Tulou Coffee Table",
-    "Description": "will be added later",
+    "Description": "Inspired by the design and functionality of a traditional tray table, the Tulou Coffee Table is composed of two basic elements: a removable round tray top with an easy-to-hold raised edge and a minimal four-legged frame. Its compact scale makes it ideal for small rooms, or group them in multiples for additional surface space.",
     "Price": 120,
     "PictureUrl": "images/products/dwell_HAY_table.png",
     "ProductTypeId": 3,
@@ -49,80 +51,80 @@
   },
   {
     "Name": "Innit Designs Acapulco Chair",
-    "Description": "will be added later",
-    "Price": 10,
+    "Description": "The Innit Designs Acapulco Chair is cool in more ways than one. Based on the original 1950s design, it has an open and airy yet ergonomic and supportive open weave vinyl seat inspired by traditional Mayan hammock weaving techniques. The pear-shaped seat and architectural steel frame give the chair a retro-modern aesthetic suitable both indoors and out.",
+    "Price": 398,
     "PictureUrl": "images/products/dwell_innit_chair.png",
     "ProductTypeId": 4,
     "ProductBrandId": 2
   },
   {
     "Name": "Urban Outfitters Evie Bed",
-    "Description": "will be added later",
-    "Price": 8,
+    "Description": "Wood bed frame with a classic, vintage-inspired look that will always feel like home. Featuring legs that taper in, framing a caged headboard with curved edges. Finished with a slatted base. Assembly required.",
+    "Price": 729,
     "PictureUrl": "images/products/dwell_urban_bed.png",
     "ProductTypeId": 2,
     "ProductBrandId": 2
   },
   {
     "Name": "GAMLARED Table",
-    "Description": "will be added later",
-    "Price": 15,
+    "Description": "Small, neat dimensions make the table easy to furnish with, even when space is limited. A round table, with soft edges, gives a relaxed impression in a room. Solid pine is a natural material that ages beautifully and acquires its own unique character over time. Durable solid wood and antique colour finish will outlast many years of use.",
+    "Price": 79,
     "PictureUrl": "images/products/ikea_GAMLARED_table.png",
     "ProductTypeId": 3,
     "ProductBrandId": 4
   },
   {
     "Name": "HEMNES Bed",
-    "Description": "will be added later",
-    "Price": 18,
+    "Description": "A sofa, a single bed, a double bed and storage in one piece of furniture! Perfect if you are tight of space. If you like the style, you can combine it with other furniture in the HEMNES series.",
+    "Price": 215,
     "PictureUrl": "images/products/ikea_HEMNES_bed.png",
     "ProductTypeId": 2,
     "ProductBrandId": 4
   },
   {
     "Name": "JANOLOF Swivel armchair",
-    "Description": "will be added later",
-    "Price": 15,
+    "Description": "The practical and comfortable swivel function allows you to easily get up from the dining table without moving the chair. Upholstered chair seat distributes your body weight and reduces pressure on the sitting bone.",
+    "Price": 125,
     "PictureUrl": "images/products/ikea_JANOLOF_chair.png",
     "ProductTypeId": 4,
     "ProductBrandId": 4
   },
   {
     "Name": "LIDHULT Corner sofa",
-    "Description": "will be added later",
-    "Price": 16,
+    "Description": "A well-deserved nap in the daytime and nice relaxing with family and friends in the evening. LIDHULT sofa is designed for maximum comfort with high back and neck support. Embracing, inviting and generous.",
+    "Price": 999,
     "PictureUrl": "images/products/ikea_LIDHULT_sofa.png",
     "ProductTypeId": 1,
     "ProductBrandId": 4
   },
   {
     "Name": "Lenox Dining Chair",
-    "Description": "will be added later",
-    "Price": 14,
+    "Description": "Defined by the elegant curve of its rounded back, our Lenox Chair is trimmed neatly in a slim, brass-finished steel frame for an airy feel and art deco sensibility. Each chair is upholstered and welded by hand.",
+    "Price": 339,
     "PictureUrl": "images/products/westelm_lenox_chair.png",
     "ProductTypeId": 4,
     "ProductBrandId": 3
   },
   {
     "Name": "Mid-Century Dining Table",
-    "Description": "will be added later",
-    "Price": 189.99,
+    "Description": "Available in three sizes, our Mid-Century Dining Table easily expands to comfortably seat up to eight or ten, making it perfect for game nights, family gatherings or dinner parties. Its sturdy frame is made from wood that's certified to Forest Stewardship Council® (FSC) standards.",
+    "Price": 199,
     "PictureUrl": "images/products/westelm_midcentury_table.png",
     "ProductTypeId": 3,
     "ProductBrandId": 3
   },
   {
     "Name": "Modern Bed",
-    "Description": "will be added later",
-    "Price": 199.99,
+    "Description": "Inspired by Scandinavian modernism, our Modern Bed marries a simple upholstered headboard with playfully angled legs in a warm pecan finish. The result? A streamlined piece that's easy on the eyes.",
+    "Price": 399,
     "PictureUrl": "images/products/westelm_modern_bed.png",
     "ProductTypeId": 2,
     "ProductBrandId": 3
   },
   {
     "Name": "Olive Sofa",
-    "Description": "will be added later",
-    "Price": 150,
+    "Description": "Sit in sophisticated style with our Olive Sofa. Available in a channel tufted back for a touch of drama with antique brass legs that are just right for your space.",
+    "Price": 290,
     "PictureUrl": "images/products/westelm_Olive_sofa.png",
     "ProductTypeId": 1,
     "ProductBrandId": 3
