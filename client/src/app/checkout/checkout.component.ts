@@ -10,7 +10,6 @@ import { CheckoutService } from './checkout.service';
 import { IAddress } from 'src/app/shared/models/address';
 import { AfterViewInit, Component, ElementRef, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
-import { IOrder } from 'src/app/shared/models/order';
 
 
 declare var Stripe;
@@ -20,7 +19,6 @@ declare var Stripe;
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
-  styleUrls: ['./checkout.component.scss']
 })
 export class CheckoutComponent implements OnInit,AfterViewInit, OnDestroy {
 
@@ -38,7 +36,6 @@ export class CheckoutComponent implements OnInit,AfterViewInit, OnDestroy {
   cardCvc: any;
   cardErrors: any;
   cardHandler = this.onChange.bind(this);
-  //loading = false;
   cardNumberValid = false;
   cardExpiryValid = false;
   cardCvcValid = false;
@@ -164,7 +161,6 @@ export class CheckoutComponent implements OnInit,AfterViewInit, OnDestroy {
   }
 
   async submitOrder() {
-    //this.loading = true;
     const basket = this.basketService.getCurrentBasketValue();
     try {
       const createdOrder = await this.createOrder(basket);
@@ -176,10 +172,9 @@ export class CheckoutComponent implements OnInit,AfterViewInit, OnDestroy {
       } else {
         this.toastr.error(paymentResult.error.message);
       }
-      //this.loading = false;
     } catch (error) {
       console.log(error);
-      //this.loading = false;
+
     }
   }
 

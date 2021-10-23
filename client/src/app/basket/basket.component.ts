@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IBasket, IBasketItem, IBasketTotals } from '../shared/models/basket';
 import { BasketService } from './basket.service';
-// import { CdkStepper } from '@angular/cdk/stepper';
-
 import { ToastrService } from 'ngx-toastr';
 
 
@@ -13,7 +11,6 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./basket.component.scss']
 })
 export class BasketComponent implements OnInit {
-  // appStepper: CdkStepper;
   basket$: Observable<IBasket>;
   basketTotals$: Observable<IBasketTotals>;
 

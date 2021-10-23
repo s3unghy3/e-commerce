@@ -19,11 +19,11 @@ namespace API.Controllers
     private readonly ILogger<PaymentsController> _logger;
 
     public PaymentsController(IPaymentService paymentService, ILogger<PaymentsController> logger)
-            // IConfiguration config)
+           
         {
             _logger = logger;
             _paymentService = paymentService;
-            //_whSecret = config.GetSection("StripeSettings:WhSecret").Value;
+            
 
         }
 

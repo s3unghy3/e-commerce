@@ -4,7 +4,7 @@
   <nav class="my-2 my-md-0 me-md-3" style="font-size: larger;">
     <a class="p-2" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME</a>
     <a class="p-2" routerLink="/shop" routerLinkActive="active">SHOP</a>
-    <!-- <a class="p-2" routerLink="/test-error" routerLinkActive="active">Errors</a> -->
+
   </nav>
   <div class="d-flex align-items-center">
 
@@ -13,8 +13,6 @@
       <i class="fa fa-user-circle-o fa-lg mr-4"></i>
     </a>
 
-      <!-- <a routerLink="/account/login" class="btn btn mr-2" href="#" id="login-button" style="border:none"><i class="fa fa-user" id="user-logo"></i></a> -->
-      <!-- <a routerLink="/account/register" class="btn btn-outline-secondary mr-3" href="#">Sign up</a> -->
     </ng-container>
 
     <a routerLink='/basket' class="position-relative" title="Shopping cart">
@@ -29,9 +27,6 @@
           <strong>Hello, {{(currentUser$ | async).displayName}}!</strong>
         </a>
         <div class="dropdown-menu dropdown-menu-right" style="cursor:pointer" *dropdownMenu>
-          <!-- <a routerLink="/basket" class="dropdown-item d-flex align-items-center py-2">
-            <i class="fa fa-shopping-cart mr-3"></i> View Basket
-          </a> -->
           <a routerLink="/orders" class="dropdown-item d-flex align-items-center py-2">
             <i class="fa fa-history mr-3"></i> Order Review
           </a>

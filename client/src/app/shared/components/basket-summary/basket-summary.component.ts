@@ -5,7 +5,6 @@ import { IOrderItem } from '../../models/order';
 @Component({
   selector: 'app-basket-summary',
   templateUrl: './basket-summary.component.html',
-  styleUrls: ['./basket-summary.component.scss']
 })
 export class BasketSummaryComponent implements OnInit {
   @Output() decrement: EventEmitter<IBasketItem> = new EventEmitter<IBasketItem>();

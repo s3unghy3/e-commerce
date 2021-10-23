@@ -16,7 +16,7 @@
                 </thead>
                 <tbody>
                     <tr *ngFor="let order of orders" routerLink="/orders/{{order.id}}">
-                        <th># {{order.id}}</th>
+                        <th>{{order.id}}</th>
                         <td>{{order.orderDate | date: 'yyyy-MM-dd'}}</td>
                         <td>{{order.total | currency:"EUR"}}</td>
                         <td>{{order.status}}</td>
