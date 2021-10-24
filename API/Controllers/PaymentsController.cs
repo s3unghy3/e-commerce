@@ -10,19 +10,21 @@ using Microsoft.Extensions.Logging;
 using Stripe;
 using Order = Core.Entities.OrderAggregate.Order;
 
+
 namespace API.Controllers
 {
     public class PaymentsController : BaseApiController
     {
     private readonly IPaymentService _paymentService;
-    private readonly string _whSecret="whsec_4uQpdpei7tLuY1ggB7TaXgST73Qqk4AK";
+    private readonly string _whSecret;
     private readonly ILogger<PaymentsController> _logger;
 
-    public PaymentsController(IPaymentService paymentService, ILogger<PaymentsController> logger)
+    public PaymentsController(IPaymentService paymentService, ILogger<PaymentsController> logger, IConfiguration config)
            
         {
             _logger = logger;
             _paymentService = paymentService;
+            _whSecret = config.GetSection("StripeSettings:WhSecret").Value;
             
 
         }
